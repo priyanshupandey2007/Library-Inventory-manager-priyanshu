@@ -1,4 +1,44 @@
-[{"title": "test",
-    "author": "me",
-    "isbn": "123",
-    "status": "available"}]
+[
+    {
+        "title": "test",
+        "author": "me",
+        "isbn": "123",
+        "status": "available"
+    },
+    {
+        "title": "Python Basics",
+        "author": "John",
+        "isbn": "101",
+        "status": "available"
+    },
+    {
+        "title": "AI Intro",
+        "author": "Sam",
+        "isbn": "202",
+        "status": "available"
+    },
+    {
+        "title": "Python Basics",
+        "author": "John",
+        "isbn": "101",
+        "status": "available"
+    },
+    {
+        "title": "AI Intro",
+        "author": "Sam",
+        "isbn": "202",
+        "status": "available"
+    },
+    {
+        "title": "Python Basics",
+        "author": "John",
+        "isbn": "101",
+        "status": "available"
+    },
+    {
+        "title": "AI Intro",
+        "author": "Sam",
+        "isbn": "202",
+        "status": "available"
+    }
+]
