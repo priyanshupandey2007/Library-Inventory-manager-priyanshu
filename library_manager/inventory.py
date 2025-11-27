@@ -44,6 +44,24 @@ class LibraryInventory:
             if b.isbn == isbn:
                 return b
         return None
+    
+    def issue_book(self, isbn):
+        book = self.search_by_isbn(isbn)
+        if book and book.issue():
+            self.save_data()
+            logging.info(f"Book issued: {isbn}")
+            return True
+        logging.error(f"Issue failed: {isbn}")
+        return False
+
+    def return_book(self, isbn):
+        book = self.search_by_isbn(isbn)
+        if book and book.return_book():
+            self.save_data()
+            logging.info(f"Book returned: {isbn}")
+            return True
+        logging.error(f"Return failed: {isbn}")
+        return False
 
     def display_all(self):
         return self.books
